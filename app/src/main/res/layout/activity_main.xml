@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/left_botton_rounded_corner"/>
+
+    <ImageView
+        android:id="@+id/backgroun3"
+        android:layout_width="15dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/black_rounded_cor"/>
+
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/arizonia"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Student Details"
+        android:textColor="@color/black"
+        android:textSize="45dp" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="24dp"
+        android:fontFamily="@font/average"
+        android:layout_below="@+id/background"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"/>
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact"
+        android:textSize="24dp"
+        android:layout_below="@+id/name"
+        android:inputType="number"
+        android:fontFamily="@font/average"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/average"
+        android:hint="Date of Birth"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dob"
+        android:layout_marginTop="30dp"
+        android:text="Insert Data"
+        android:textSize="24dp"
+        android:backgroundTint="#F8FD59"
+        android:fontFamily="@font/average"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"/>
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Update Data"
+        android:layout_below="@id/btnInsert"
+        android:backgroundTint="#F8FD59"
+        android:fontFamily="@font/average"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"/>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Delete Data"
+        android:layout_below="@id/btnUpdate"
+        android:backgroundTint="#F8FD59"
+        android:fontFamily="@font/average"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"/>
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="View Data"
+        android:layout_below="@id/btnDelete"
+        android:backgroundTint="#F8FD59"
+        android:fontFamily="@font/average"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"/>
+
+</RelativeLayout>
